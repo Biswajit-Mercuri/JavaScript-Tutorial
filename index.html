@@ -1,115 +1,143 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Practice</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Practice</title>
-  <link href="./style.css" rel="stylesheet" />
-</head>
-
-<body>
-<!---------What is JavaScript----------->
-  <div class="define">
-    <h1>1. What is JavaScript ?</h1>
+  <body>
+    <!---------What is JavaScript----------->
+    <div class="define">
+      <h1>1. What is JavaScript ?</h1>
       <ul>
         <li>It is a client-side object-base scripting language</li>
         <li>
           It is also <u>Single-threaded</u> language and <u>Synchronous</u>
           <ol>
             <li>
-              <b>Single-threaded </b> : It means that JS execute command line by line.
+              <b>Single-threaded </b> : It means that JS execute command line by
+              line.
             </li>
             <li>
-              <b>Synchronous </b> : It menas that it execute command in specific order.
+              <b>Synchronous </b> : It menas that it execute command in specific
+              order.
             </li>
           </ol>
         </li>
       </ul>
-  </div>
+    </div>
 
-  <!-------JavaScript Keywords--------->
-  <div class="keyword">
-    <h1>2. JavaScript Keywords</h1>
-    <ul>
-      <li>
-        var => Declares a Global Variable
-      </li>
-      <li>
-        let => Declares a Block Variable
-      </li>
-      <li>
-        const => Declares a Block Variable
-      </li>
-      <li>
-        if => it execute a condition
-      </li>
-      <li>
-        function => Declares a function
-      </li>
-      <li>
-        switch => execute
-      </li>
-      <li>
-        for => Execute in a loop
-      </li>
-      <li>
-        try => error handling to a block statements
-      </li>
-    </ul>
-  </div>
-  <!-------JavaScript Keywords--------->
+    <!-------JavaScript Keywords--------->
+    <div class="keyword">
+      <h1>2. JavaScript Keywords</h1>
+      <ul>
+        <li>var => Declares a Global Variable</li>
+        <li>let => Declares a Block Variable</li>
+        <li>const => Declares a Block Variable</li>
+        <li>if => it execute a condition</li>
+        <li>function => Declares a function</li>
+        <li>switch => execute</li>
+        <li>for => Execute in a loop</li>
+        <li>try => error handling to a block statements</li>
+      </ul>
+    </div>
+    <!-------JavaScript Keywords--------->
 
-  <!-------JavaScript Keywords--------->
+    <!-------JavaScript Output--------->
+    <div>
+      <h1>3. JavaScript Output Property</h1>
 
+      <button onclick="innerFunction()">.innerHTML()</button>
+      <p id="inner"></p>
+      <button id="innerResult" style="display: none">Solution</button>
+      <p id="inner-Result" style="display: none">
+        To display inside webpage by using JavaScript we use <br />
+        <b
+          ><u
+            >document.getElementById("id_name").innerHTML = "YOUR - OUTPUT"</u
+          ></b
+        >
+        <br />
+        <b
+          ><i><u>document</u></i></b
+        >
+        because for DOM model and <br />
+        <b
+          ><i><u>getElementById</u></i></b
+        >
+        is for target the element where we want to display our OUTPUT.
+      </p>
 
-  <!---------IIFE function----------------->
-  <fieldset>
-    <legend>IIFE function</legend>
-    <p id="displayIIFE"></p>
-    <button id="clickMe">Output</button>
-    <p>
-      <span id="IIFE"></span>
       <br />
-      <span id="display"></span>
-    </p>
-  </fieldset>
-  <!---------IIFE function----------------->
 
-  <br>
-  <!---------Closure function----------------->
-  <fieldset>
-    <legend>Closure</legend>
-    <p id="closureProblem"></p>
-    <button id="closure">Output</button>
-    <p>
-      <span id="closureObject"></span>
-      <span id="closurePara"></span>
-      <span id="closureResult"></span>
-    </p>
-  </fieldset>
-  <!---------Closure function----------------->
+      <button onclick="writeFunction()">document.write()</button>
 
-  <br>
+      <br />
+      <br />
 
-  <!-----------Toggle Button----------------->
-  <fieldset>
-    <legend>Toggle Button</legend>
-    <div class="t-container">
-      <div class="t-output">
-        <pre id="tpara"></pre>
-        <button id="btn-1">Button 1</button>
+      <button onclick="alertFunction()">alert()</button>
+      <p id="alert" style="display: none">
+        We get a notification screen from top as a alert message.
+      </p>
 
-        <h3 class="show-hide">
-          2nd button is :
-          <button id="btn-2" style="display: none">Button 2</button>
-        </h3>
-        <h3 class="show-hide">
-          3rd button is :
-          <button id="btn-3" style="display: none">Button 3</button>
-        </h3>
-      </div>
-      <div class="t-solv">
-        <button id="t-result" style="display: none;">Solution</button>
-        <pre id="toggleResult" style="display: none">
+      <br />
+      <br />
+
+      <button onclick="consoleFunction()">console.log()</button>
+      <p id="console"></p>
+    </div>
+
+    <!-------JavaScript Output--------->
+
+    <!---------IIFE function----------------->
+    <fieldset>
+      <legend>IIFE function</legend>
+      <p id="displayIIFE"></p>
+      <button id="clickMe">Output</button>
+      <p>
+        <span id="IIFE"></span>
+        <br />
+        <span id="display"></span>
+      </p>
+    </fieldset>
+    <!---------IIFE function----------------->
+
+    <br />
+    <!---------Closure function----------------->
+    <fieldset>
+      <legend>Closure</legend>
+      <p id="closureProblem"></p>
+      <button id="closure">Output</button>
+      <p>
+        <span id="closureObject"></span>
+        <span id="closurePara"></span>
+        <span id="closureResult"></span>
+      </p>
+    </fieldset>
+    <!---------Closure function----------------->
+
+    <br />
+
+    <!-----------Toggle Button----------------->
+    <fieldset>
+      <legend>Toggle Button</legend>
+      <div class="t-container">
+        <div class="t-output">
+          <pre id="tpara"></pre>
+          <button id="btn-1">Button 1</button>
+
+          <h3 class="show-hide">
+            2nd button is :
+            <button id="btn-2" style="display: none">Button 2</button>
+          </h3>
+          <h3 class="show-hide">
+            3rd button is :
+            <button id="btn-3" style="display: none">Button 3</button>
+          </h3>
+        </div>
+        <div class="t-solv">
+          <button id="t-result" style="display: none">Solution</button>
+          <pre id="toggleResult" style="display: none">
           document.getElementById("tpara").innerHTML =
               "let's try to create a nested button";
 
@@ -136,13 +164,13 @@
                   btn2.style.display = "none";
               }
           }
-        </pre>
+        </pre
+          >
+        </div>
       </div>
-    </div>
-  </fieldset>
-  <!-----------Toggle Button----------------->
+    </fieldset>
+    <!-----------Toggle Button----------------->
 
-  <script src="script.js" async></script>
-</body>
-
+    <script src="script.js" async defer></script>
+  </body>
 </html>
