@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-hide {
+    display: flex;
+    flex-direction: row;
+}
+
+.t-container{
+    display: flex;
+    flex-direction: column;
+
+}
